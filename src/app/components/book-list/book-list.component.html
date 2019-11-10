@@ -1,0 +1,23 @@
+<div>
+    <table border="1" style="color: black">
+        <thead>
+            <th>Book ID</th>
+            <th>Book Name</th>
+            <th>Literary Genre ID</th>
+            <th>Literary Genre Name</th>
+            <th>Publishing Company ID</th>
+            <th>Publishing Company Name</th>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let book of books">
+                <td>{{ book.id }}</td>
+                <td>{{ book.name }}</td>
+                <td>{{ book.genre.id  }}</td>
+                <td>{{ book.genre.name }}</td>
+                <td>{{ book.publishingCompany.id }}</td>
+                <td>{{ book.publishingCompany.name }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
